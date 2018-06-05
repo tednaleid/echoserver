@@ -31,6 +31,7 @@ func postResult(c echo.Context) error {
 		reqString := string(reqBody)
 
 		if len(reqString) > 0 {
+			println(reqString)
 			return c.String(http.StatusOK, reqString)
 		}
 	}
